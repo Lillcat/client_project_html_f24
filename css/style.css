@@ -179,8 +179,3 @@ footer {
 .footer-link {
   color: var(--color-light);
 }
-
-footer img {
-  width: 3rem;
-  height: auto;
-}
