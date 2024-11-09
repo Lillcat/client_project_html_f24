@@ -9,55 +9,65 @@
 </head>
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="basic_needs.html">Basic Needs</a></li>
+            <li>
+              <a class="nav-link" href="umsi_tutoring_academic_support.html"
+                >UMSI Tutoring & Academic Support</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="caps.html"
+                >Counseling and Psychological Services (CAPS)</a
+              >
+            </li>
+          </ul>
+    </nav>
     <header>
         <h1>Basic Needs</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="basic_needs.html">Basic Needs</a></li>
-            <li><a href="umsi_tutoring_academic_support.html">UMSI Tutoring and Academic Support</a></li>
-            <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li> 
-        </ul>
-    </nav>
     <!--I started this assignment before the discussion and I thought you wanted us to mimic the pages from the websites you gave us. I only copied the content on this page-->
     <main id="main">
         <section>
             <div class="header-container">
                 <h2>Resources By Category</h2>
             </div>
-                <p class="content-container"> Striving for fair and equitable access to food and other basic resources </p>
             <div class="content-container">
+                <p class="content-container_center"> Striving for fair and equitable access to food and other basic resources </p>
+            </div>
+            <div class="content-container gallery">
                 <article>
-                    <h3>Critical Incident Support & Conflict Management</h3>
+                    <a class="title-link" href="https://basicneeds.studentlife.umich.edu/category/critical-incident-support-conflict-management/"><h3>Critical Incident Support & Conflict Management</h3></a>
                     <figure>
                         <img src="images/basic_needs/critical_incident.jpg" alt="stressed out male student studying with laptop">
                     </figure>
                     <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
                 </article>
                 <article>
-                    <h3>Finance</h3>
+                    <a class="title-link" href="https://basicneeds.studentlife.umich.edu/category/finance/"><h3>Finance</h3></a>
                     <figure>
                         <img src="images/basic_needs/finance.jpg" alt="person counting dollar bills">
                     </figure>
                     <p>Financial resources to help with immediate and long-term needs, such as emergencies, college funding and employment.</p>
                 </article>
                 <article>
-                    <h3>Food</h3>
+                    <a class="title-link" href="https://basicneeds.studentlife.umich.edu/category/food/"><h3>Food</h3></a>
                     <figure>
                         <img src="images/basic_needs/food.jpg" alt="stir-fry in frying pan">
                     </figure>
                     <p>Services to help students maintain healthy habits, find access to food, and seek assistance when struggling to buy food.</p>
                 </article>          
                 <article>
-                    <h3>Healthcare</h3>
+                    <a class="title-link" href="https://basicneeds.studentlife.umich.edu/category/health-care/"><h3>Healthcare</h3></a>
                     <figure>
                         <img src="images/basic_needs/healthcare.jpg" alt="stethoscope">
                     </figure>
                     <p>Support for students seeking medical, dental or mental health treatment, including resources for securing health insurance and finding care providers.</p>
                 </article>          
                 <article>
-                    <h3>Housing & Transportation</h3>
+                    <a class="title-link" href="https://basicneeds.studentlife.umich.edu/category/housing-transportation/"><h3>Housing & Transportation</h3></a>
                     <figure>
                         <img src="images/basic_needs/housing_transportation.jpg" alt="multiple college students waiting on the street for university's bus">
                     </figure>
@@ -68,9 +78,15 @@
     </main>
 
     <footer>
-        <p>Student Life | <a class="footer-link" href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <span class="date"></span>
+            | Student Life | <a class="footer-link" href="https://basicneeds.studentlife.umich.edu/">Basic Needs </a></p>
     </footer>
-    
+    <script type="text/javascript">
+        const date = document.querySelector(".date");
+        date.innerHTML = "&copy; " + new Date().getFullYear();
+    </script>
+  
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Success Portal</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="basic_needs.html">Basic Needs</a></li>
+            <li>
+              <a class="nav-link" href="umsi_tutoring_academic_support.html"
+                >UMSI Tutoring & Academic Support</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="caps.html"
+                >Counseling and Psychological Services (CAPS)</a
+              >
+            </li>
+          </ul>
+    </nav>
+
+    <main id="main" class="not-found-container">
+      <div class="not-found-content">
+        <h1 class="not-found">
+          404
+        </h1>
+        <p>Oops! Looks like something is missing</p>
+        <a href="index.html"><button class="home-button">Home</button></a>
+      </div>
+    </main>
+
+    <footer>
+        <p> <span class="date"></span></p>
+    </footer>
+    <script type="text/javascript">
+        const date = document.querySelector(".date");
+        date.innerHTML = "&copy; " + new Date().getFullYear();
+    </script>
+
+    <script src="./js/nav.js"></script>
+
+    <script>
+      const nav =  document.querySelector("nav");
+      nav.style.margin = 0;
+    </script>
+</body>
+</html>

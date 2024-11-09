@@ -9,17 +9,25 @@
 </head>
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="basic_needs.html">Basic Needs</a></li>
+            <li>
+              <a class="nav-link" href="umsi_tutoring_academic_support.html"
+                >UMSI Tutoring & Academic Support</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="caps.html"
+                >Counseling and Psychological Services (CAPS)</a
+              >
+            </li>
+          </ul>
+    </nav>
     <header>
         <h1>Counseling and Psychological Services (CAPS)</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="basic_needs.html">Basic Needs</a></li>
-            <li><a href="umsi_tutoring_academic_support.html">UMSI Tutoring and Academic Support</a></li>
-            <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li> 
-        </ul>
-    </nav>
     <main id="main">
         <section>
             <div class="header-container">
@@ -50,10 +58,16 @@
         </section>
     </main>
     <footer>
-        <p>University Health & Counseling:
+        <p> <span class="date"></span>
+            | University Health & Counseling:
             CAPS Counseling and Psychological Services | <a class="footer-link" href="https://caps.umich.edu/">CAPS Counseling and Psychological Services </a></p>
+            <br><p> Contact Us: <a class="footer-link" href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu </a> | (734) 764-8312 (24hrs)</p>
     </footer>
-
+    <script type="text/javascript">
+        const date = document.querySelector(".date");
+        date.innerHTML = "&copy; " + new Date().getFullYear();
+    </script>
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>

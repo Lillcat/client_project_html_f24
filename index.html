@@ -9,17 +9,25 @@
 </head>
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="basic_needs.html">Basic Needs</a></li>
+            <li>
+              <a class="nav-link" href="umsi_tutoring_academic_support.html"
+                >UMSI Tutoring & Academic Support</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="caps.html"
+                >Counseling and Psychological Services (CAPS)</a
+              >
+            </li>
+          </ul>
+    </nav>
     <header>
         <h1>Student Success Portal</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="basic_needs.html">Basic Needs</a></li>
-            <li><a href="umsi_tutoring_academic_support.html">UMSI Tutoring & Academic Support</a></li>
-            <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li>
-        </ul>
-    </nav>
 
     <main id="main">
         <section class="container">
@@ -69,7 +77,7 @@
                 <h2>Mental Health</h2>
             </div>
 
-            <div class="content-container">
+            <div class="content-container_index">
                 <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
                 <article>
                     <h3>Counseling and Psychological Services (CAPS):</h3>
@@ -101,7 +109,7 @@
 
             <div class="content-container">
                 <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-                <ul>
+                <ul class="bullet-point">
                     <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
                     <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
                     <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
@@ -112,7 +120,14 @@
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a class="footer-link" href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <span class="date"></span>
+            | MSI Academic Advising | <a class="footer-link" href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
     </footer>
+    <script type="text/javascript">
+        const date = document.querySelector(".date");
+        date.innerHTML = "&copy; " + new Date().getFullYear();
+    </script>
+
+    <script src="./js/nav.js"></script>
 </body>
 </html>
