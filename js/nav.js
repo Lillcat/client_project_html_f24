@@ -1,3 +1,4 @@
+// I copied this from google's AI search results
 // Get all navigation links
 const navLinks = document.querySelectorAll('.nav-link');
 
